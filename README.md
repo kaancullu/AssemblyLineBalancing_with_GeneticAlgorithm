@@ -1,0 +1,2 @@
+# AssemblyLineBalancing_with_GeneticAlgorithm
+parallel assembly line implementation
