@@ -2,6 +2,7 @@ clc;
 clear all;
 close all;
 
+% given sample (priorities)
 op=  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
         1 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
         2 1 0 0 0 0 0 0 0 0 0 0 0 0 0;
@@ -18,12 +19,13 @@ op=  [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
         12 11 10 9 0 0 0 0 0 0 0 0 0 0 0;
         13 11 10 9 0 0 0 0 0 0 0 0 0 0 0];
 
+    % times for each job
     time=[11 17 9 5 8 12 10 3 11 17 9 5 8 12 10];
     
     [satir,sutun]=size(op);
     
     maxIter=input('Lutfen maksimum iterasyon sayisini giriniz:');
-    pop_size=input('Lütfen populasyon buyuklugunu giriniz:');
+    pop_size=input('LÃ¼tfen populasyon buyuklugunu giriniz:');
     if pop_size>500 || maxIter>100000
         return
     end
